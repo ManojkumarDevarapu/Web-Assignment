@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Page</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        label:after{
+            content:"*";
+            color: red  ;
+        }
+        
+        form {
+        display: flex;
+        flex-direction:row;
+        max-width: 500px;
+        margin: auto;
+    }
+    label {
+        margin-bottom: 5px;
+       
+    }
+    input {
+        padding: 5px;
+        margin-bottom: 10px;
+        
+    }
+    .bg{
+        
+        width: 600px;
+        height: 500px;
+        align-items: center;
+        margin-left: 500px;
+    }
+        
+    </style>
+</head>
+<body style="background-color:rgb(247, 191, 249);">
+    <b>
+    <h1 style="color: black;">Registration Form</h1><br><br>
+    <div class="bg">
+    <form>
+        <center>
+        <label for="fname">First Name(Minimum 6 characters)</label>
+        <input type="text" name="fname" id="fname"><br><br>
+         <label for="lname">Last Name</label>
+         <input type="text" name="lname" id="lname"><br><br>
+        <label for="email">Email Address</label>
+        <input type="text" name="email" id="email">
+        
+           <div>
+            <p style ="color: red;">(one email id only):
+            <span style="color: rgb(17, 128, 128);">e.g. smith@hotmail.com</span></p>
+           </div>
+        <label for="pass">Password(minimum 6 characters)</label>
+        <input type="password" name="pass" id="pass"><br><br>
+        <label for="add">Address</label>
+        <textarea name="add" id="add" rows="3" cols="30"></textarea> <br><br>
+        <label for="mno">Mobile Number</label>
+        <input type="number" name="mno" id="mno"><br><br>
+        <label for="gen">Gender:</label>
+        <input type="radio" name="gen" id="gen">male
+        <input type="radio" name="gen" id="gen">female<br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+
+    </center>
+    </form>
+    </div>
+    </b>
+</body>
+</html>
